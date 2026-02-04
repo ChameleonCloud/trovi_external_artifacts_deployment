@@ -1,9 +1,12 @@
 # Chameleon Bare Metal Artifact Environment
 
 This notebook provisions a bare metal environment on Chameleon for examining a
-selected software artifact. When the notebook is launched, a pre-selected Git
-repository is passed as an argument and automatically cloned into your home
-directory on the instance for you to explore and use.
+selected software artifact. When the notebook is launched, it will clone the
+repository configured in the `ARTIFACT_REPO_URL` environment variable. If this
+variable is not set, it will default to
+`https://github.com/ChameleonCloud/trovi_external_artifacts_deployment.git`.
+The repository is cloned into your home directory on the instance for you to
+explore and use.
 
 To provision nodes, set up instances, and access the cloned repository in the
 cloud, check out `Experiment.ipynb` in the file explorer in the left sidebar.
